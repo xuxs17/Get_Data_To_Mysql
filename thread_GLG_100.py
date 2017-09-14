@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Sep  8 12:01:29 2017
-
-@author: changjin
+@author: xuxs17
 """
 #加载相应模块
 import pymysql
@@ -50,7 +49,7 @@ class  Insert_Data(threading.Thread):
         self.work_queue = work_queue
         
     def run(self):
-	   #连接mysql,以下是mysql参数
+	#连接mysql,以下是mysql参数
         conn = pymysql.connect(
                 host='xxx.xxx.xxx',
                 port=3306,
