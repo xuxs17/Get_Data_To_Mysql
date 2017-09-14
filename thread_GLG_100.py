@@ -22,7 +22,7 @@ class Get_Data(threading.Thread):
         
         #打开文本,采用读模式
         f = open("d:/XU/wantup/GLG_001.txt", "r")
-        #设置跳过第一行
+        #第一行为无用数据,设置跳过第一行
         i = 0
         while True:            
             line = f.readline()
