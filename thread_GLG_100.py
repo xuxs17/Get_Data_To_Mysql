@@ -52,10 +52,10 @@ class  Insert_Data(threading.Thread):
     def run(self):
 	   #连接mysql,以下是mysql参数
         conn = pymysql.connect(
-                host='192.168.7.66',
+                host='xxx.xxx.xxx',
                 port=3306,
-                user='root',
-                passwd='admin',
+                user='xxx',
+                passwd='xxx',
                 db='test',
                 charset='utf8',
             )
@@ -85,9 +85,7 @@ class  Insert_Data(threading.Thread):
             #从队列取数设置暂停
             #time.sleep() 
             
-		
-        
-        
+		      
 def main():
 
     #实例一个队列queue
@@ -114,26 +112,4 @@ if __name__ == '__main__':
     
     
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
-
-
+   
