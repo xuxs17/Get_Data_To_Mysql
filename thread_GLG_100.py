@@ -88,28 +88,23 @@ class  Insert_Data(threading.Thread):
 		      
 def main():
 
-    #实例一个队列queue
+    #实例化一个队列queue
     work_queue = queue.Queue()
-
+	
     get_data = Get_Data(work_queue)
-
     #当主线程退出时子线程也退出
     get_data.daemon = True
     get_data.start()
     
     insert_data = Insert_Data(work_queue)
-
     #当主线程退出时子线程也退出
     insert_data.daemon = True
     insert_data.start()
     
     work_queue.join()
-    
-    
+       
 if __name__ == '__main__':
     
     main()
     
     
-
-   
